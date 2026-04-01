@@ -32,7 +32,9 @@ script_dir = os.path.dirname(os.path.abspath(__file__))
 movie_list_path = os.path.join(script_dir, 'model', 'movie_list.pkl')
 similarity_path = os.path.join(script_dir, 'model', 'similarity.pkl')
 
-movies = pickle.load(open(movie_list_path,'rb'))
+# movies = pickle.load(open(movie_list_path,'rb'))
+
+movies = pickle.load(open("movie_list.pkl", "rb"))
 similarity = pickle.load(open(similarity_path,'rb'))
 
 movie_list = movies['title'].values
