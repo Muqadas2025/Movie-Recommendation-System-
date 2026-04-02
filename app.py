@@ -30,13 +30,21 @@ st.header('Movie Recommender System')
 # Get the directory where this script is located
 script_dir = os.path.dirname(os.path.abspath(__file__))
 movie_list_path = os.path.join(script_dir, 'model', 'movie_list.pkl')
-similarity_path = os.path.join(script_dir, 'model', 'similarity.pkl')
+similarity_path = os.path.join(script_dir, 'file_path', 'file_id')
+file_id = "13jxUzDYxk3Y1Te7zcu2SETAWy_7EJD-b/view?usp=sharing"
+file_path = "similarity.pkl"
+
+if not os.path.exists(file_path):
+    url = f"https://drive.google.com/uc?id={file_id}"
+    gdown.download(url, file_path, quiet = False)
+    
+
 
 # movies = pickle.load(open(movie_list_path,'rb'))
 
 # movies = pickle.load(open("movie_list.pkl", "rb"))
 movies = pickle.load(open("movie_list.pkl", "rb"))
-similarity = pickle.load(open(similarity_path,'rb'))
+similarity = pickle.load(open(file_path,'rb'))
 
 movie_list = movies['title'].values
 selected_movie = st.selectbox(
