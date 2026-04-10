@@ -3,7 +3,7 @@ import streamlit as st
 import requests
 import pandas as pd
 import os
-import gdown 
+# import gdown 
 
 
 def fetch_poster(movie_id):
@@ -25,13 +25,13 @@ def recommend(movie):
         recommended_movie_posters.append(fetch_poster(movie_id))
         recommended_movie_names.append(movies.iloc[i[0]].title)
 
-    return recommended_movie_names,recommended_movie_posters
-file_id = "13jxUzDYxk3Y1Te7zcu2SETAWy_7EJD-b"
-file_path = "similarity.pkl"
+#     return recommended_movie_names,recommended_movie_posters
+# file_id = "13jxUzDYxk3Y1Te7zcu2SETAWy_7EJD-b"
+# file_path = "similarity.pkl"
 
-if not os.path.exists(file_path):
-    url = f"https://drive.google.com/uc?id={file_id}"
-    gdown.download(url, file_path, quiet = False)
+# if not os.path.exists(file_path):
+#     url = f"https://drive.google.com/uc?id={file_id}"
+#     gdown.download(url, file_path, quiet = False)
     
 
 
