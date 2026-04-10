@@ -1,0 +1,26 @@
+Microsoft Windows [Version 10.0.19045.6466]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\Tech Hub>cd desktop
+
+C:\Users\Tech Hub\Desktop>cd Movie-Recommendation-System-
+
+C:\Users\Tech Hub\Desktop\Movie-Recommendation-System->dir
+ Volume in drive C has no label.
+ Volume Serial Number is CE46-18F8
+
+ Directory of C:\Users\Tech Hub\Desktop\Movie-Recommendation-System-
+
+04/10/2026  12:08 PM    <DIR>          .
+04/10/2026  12:08 PM    <DIR>          ..
+04/10/2026  12:04 PM             2,590 app.py
+04/10/2026  12:04 PM                74 config.toml
+04/10/2026  12:04 PM               580 launch.json
+04/10/2026  12:04 PM               107 movie-recommender-system-tmdb-dataset-main.code-workspace
+04/10/2026  12:04 PM         2,396,363 movie_list.pkl
+04/10/2026  12:04 PM           101,775 notebook86c26b4f17.ipynb
+04/10/2026  12:04 PM               107 README.md
+04/10/2026  12:04 PM             2,870 requirements.txt
+04/02/2026  11:31 AM       184,781,228 similarity.pkl
+               9 File(s)    187,285,694 bytes
+               2 Dir(s)  38,617,616,384 bytes free
